@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <delete dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/tmp"/>
+  <delete dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/testconf"/>
+  <delete dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/warehouse"/>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/tmp"/>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/warehouse"/>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/testconf"/>
+  <copy todir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/target/testconf">
+    <fileset dir="/home/forsre/git/apache-hive-3.1.2-src/jdbc/../data/conf/"/>
+  </copy>
+</target>
+</project>

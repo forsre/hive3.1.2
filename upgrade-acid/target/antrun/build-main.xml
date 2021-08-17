@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/upgrade-acid/target/tmp/scripts/metastore"/>
+  <copy todir="/home/forsre/git/apache-hive-3.1.2-src/upgrade-acid/target/tmp/scripts/metastore">
+    <fileset dir="/home/forsre/git/apache-hive-3.1.2-src/upgrade-acid/../metastore/scripts/"/>
+  </copy>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/upgrade-acid/target/tmp/scripts/metastore/upgrade"/>
+  <copy todir="/home/forsre/git/apache-hive-3.1.2-src/upgrade-acid/target/tmp/scripts/metastore/upgrade">
+    <fileset dir="/home/forsre/git/apache-hive-3.1.2-src/upgrade-acid/../standalone-metastore/src/main/sql/"/>
+  </copy>
+</target>
+</project>

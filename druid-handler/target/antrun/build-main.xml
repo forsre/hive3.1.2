@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <delete dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/tmp"/>
+  <delete dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/testconf"/>
+  <delete dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/warehouse"/>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/tmp"/>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/warehouse"/>
+  <mkdir dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/testconf"/>
+  <copy todir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/target/testconf">
+    <fileset dir="/home/forsre/git/apache-hive-3.1.2-src/druid-handler/../data/conf/"/>
+  </copy>
+</target>
+</project>
